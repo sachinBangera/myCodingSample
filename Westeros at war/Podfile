@@ -1,0 +1,16 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Westeros at war' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+pod 'ObjectMapper'
+pod 'Alamofire'
+pod 'AlamofireObjectMapper'
+pod 'SVProgressHUD'
+pod 'BubbleTransition'
+
+  # Pods for Westeros at war
+
+end

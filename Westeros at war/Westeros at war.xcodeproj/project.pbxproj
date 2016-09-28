@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0372E0041D860CE600A29075 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0372E0031D860CE600A29075 /* DetailsViewController.swift */; };
+		03B66C6D1D85794900D62023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B66C5B1D85794900D62023 /* AppDelegate.swift */; };
+		03B66C6E1D85794900D62023 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03B66C651D85794900D62023 /* LaunchScreen.storyboard */; };
+		03B66C6F1D85794900D62023 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03B66C671D85794900D62023 /* Main.storyboard */; };
+		03B66C701D85794900D62023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03B66C6A1D85794900D62023 /* Assets.xcassets */; };
+		03B66C7F1D857B5400D62023 /* AppDelegate+Look.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B66C721D857B5400D62023 /* AppDelegate+Look.swift */; };
+		03B66C801D857B5400D62023 /* Array+Look.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B66C731D857B5400D62023 /* Array+Look.swift */; };
+		03B66C811D857B5400D62023 /* NSDate+Look.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B66C741D857B5400D62023 /* NSDate+Look.swift */; };
+		03B66C821D857B5400D62023 /* String+Look.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B66C751D857B5400D62023 /* String+Look.swift */; };
+		03B66C831D857B5400D62023 /* UICollectionViewCell+Look.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B66C761D857B5400D62023 /* UICollectionViewCell+Look.swift */; };
+		03B66C841D857B5400D62023 /* UIColor+Look.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B66C771D857B5400D62023 /* UIColor+Look.swift */; };
+		03B66C881D857B5400D62023 /* UILabel+Look.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B66C7B1D857B5400D62023 /* UILabel+Look.swift */; };
+		03B66C891D857B5400D62023 /* UIStoryboard+Look.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B66C7C1D857B5400D62023 /* UIStoryboard+Look.swift */; };
+		03B66C8A1D857B5400D62023 /* UITableViewCell+Look.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B66C7D1D857B5400D62023 /* UITableViewCell+Look.swift */; };
+		03B66C8B1D857B5400D62023 /* UIViewController+Look.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B66C7E1D857B5400D62023 /* UIViewController+Look.swift */; };
+		03B66C8D1D857B5A00D62023 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B66C8C1D857B5A00D62023 /* Utility.swift */; };
+		03B66C901D857B6100D62023 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B66C8F1D857B6100D62023 /* Reachability.swift */; };
+		03B66C921D857B7700D62023 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B66C911D857B7700D62023 /* Constants.swift */; };
+		03B66C941D857C5A00D62023 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B66C931D857C5A00D62023 /* BaseModel.swift */; };
+		03B66C961D857C5F00D62023 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B66C951D857C5F00D62023 /* ServiceManager.swift */; };
+		03B66C981D857E0F00D62023 /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B66C971D857E0F00D62023 /* Battle.swift */; };
+		03B66C9A1D85817D00D62023 /* BattleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B66C991D85817D00D62023 /* BattleManager.swift */; };
+		03B66C9C1D859ED300D62023 /* King.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B66C9B1D859ED300D62023 /* King.swift */; };
+		03BB73311D85C2EE004805D3 /* FoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB73301D85C2EE004805D3 /* FoldingCell.swift */; };
+		03BB73351D85C495004805D3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB73341D85C495004805D3 /* HomeViewController.swift */; };
+		03BB73371D85C60B004805D3 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB73361D85C60B004805D3 /* HomeViewCell.swift */; };
+		BBA9D8F2DDC4BA5F5A3FF899 /* Pods_Westeros_at_war.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0361C0CBFE7B0E8B9A6D9B92 /* Pods_Westeros_at_war.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00C64EC85D86C6536224BBD9 /* Pods-Westeros at war.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Westeros at war.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Westeros at war/Pods-Westeros at war.debug.xcconfig"; sourceTree = "<group>"; };
+		0361C0CBFE7B0E8B9A6D9B92 /* Pods_Westeros_at_war.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Westeros_at_war.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0372E0031D860CE600A29075 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		03B66C441D85784C00D62023 /* Westeros at war.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Westeros at war.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03B66C5B1D85794900D62023 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03B66C651D85794900D62023 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03B66C671D85794900D62023 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		03B66C6A1D85794900D62023 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03B66C6C1D85794900D62023 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03B66C721D857B5400D62023 /* AppDelegate+Look.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Look.swift"; sourceTree = "<group>"; };
+		03B66C731D857B5400D62023 /* Array+Look.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Look.swift"; sourceTree = "<group>"; };
+		03B66C741D857B5400D62023 /* NSDate+Look.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Look.swift"; sourceTree = "<group>"; };
+		03B66C751D857B5400D62023 /* String+Look.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Look.swift"; sourceTree = "<group>"; };
+		03B66C761D857B5400D62023 /* UICollectionViewCell+Look.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Look.swift"; sourceTree = "<group>"; };
+		03B66C771D857B5400D62023 /* UIColor+Look.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Look.swift"; sourceTree = "<group>"; };
+		03B66C7B1D857B5400D62023 /* UILabel+Look.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Look.swift"; sourceTree = "<group>"; };
+		03B66C7C1D857B5400D62023 /* UIStoryboard+Look.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Look.swift"; sourceTree = "<group>"; };
+		03B66C7D1D857B5400D62023 /* UITableViewCell+Look.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Look.swift"; sourceTree = "<group>"; };
+		03B66C7E1D857B5400D62023 /* UIViewController+Look.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Look.swift"; sourceTree = "<group>"; };
+		03B66C8C1D857B5A00D62023 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		03B66C8F1D857B6100D62023 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		03B66C911D857B7700D62023 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		03B66C931D857C5A00D62023 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		03B66C951D857C5F00D62023 /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		03B66C971D857E0F00D62023 /* Battle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Battle.swift; sourceTree = "<group>"; };
+		03B66C991D85817D00D62023 /* BattleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleManager.swift; sourceTree = "<group>"; };
+		03B66C9B1D859ED300D62023 /* King.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = King.swift; sourceTree = "<group>"; };
+		03BB73301D85C2EE004805D3 /* FoldingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldingCell.swift; sourceTree = "<group>"; };
+		03BB73341D85C495004805D3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		03BB73361D85C60B004805D3 /* HomeViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
+		1BB37AAE0A7896D5F3AC708B /* Pods-Westeros at war.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Westeros at war.release.xcconfig"; path = "Pods/Target Support Files/Pods-Westeros at war/Pods-Westeros at war.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03B66C411D85784C00D62023 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA9D8F2DDC4BA5F5A3FF899 /* Pods_Westeros_at_war.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03B66C3B1D85784C00D62023 = {
+			isa = PBXGroup;
+			children = (
+				03B66C461D85784C00D62023 /* Westeros at war */,
+				03B66C451D85784C00D62023 /* Products */,
+				B445581F4FC285DE1A7C329D /* Pods */,
+				5E65888564E993B698551B22 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		03B66C451D85784C00D62023 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03B66C441D85784C00D62023 /* Westeros at war.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03B66C461D85784C00D62023 /* Westeros at war */ = {
+			isa = PBXGroup;
+			children = (
+				03B66C591D85794900D62023 /* Classes */,
+				03B66C691D85794900D62023 /* Resources */,
+				03B66C6B1D85794900D62023 /* SupportingFiles */,
+			);
+			path = "Westeros at war";
+			sourceTree = "<group>";
+		};
+		03B66C591D85794900D62023 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				03B66C611D85794900D62023 /* Model */,
+				03B66C621D85794900D62023 /* Service */,
+				03B66C681D85794900D62023 /* ViewController */,
+				03B66C631D85794900D62023 /* Storyboard */,
+				03B66C5C1D85794900D62023 /* Helper */,
+				03B66C5A1D85794900D62023 /* AppDelegate */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		03B66C5A1D85794900D62023 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				03B66C5B1D85794900D62023 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		03B66C5C1D85794900D62023 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				03B66C5D1D85794900D62023 /* Constant */,
+				03B66C5E1D85794900D62023 /* Extension */,
+				03B66C5F1D85794900D62023 /* Helper */,
+				03B66C601D85794900D62023 /* Utility */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		03B66C5D1D85794900D62023 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				03B66C911D857B7700D62023 /* Constants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		03B66C5E1D85794900D62023 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				03B66C721D857B5400D62023 /* AppDelegate+Look.swift */,
+				03B66C731D857B5400D62023 /* Array+Look.swift */,
+				03B66C741D857B5400D62023 /* NSDate+Look.swift */,
+				03B66C751D857B5400D62023 /* String+Look.swift */,
+				03B66C761D857B5400D62023 /* UICollectionViewCell+Look.swift */,
+				03B66C771D857B5400D62023 /* UIColor+Look.swift */,
+				03B66C7B1D857B5400D62023 /* UILabel+Look.swift */,
+				03B66C7C1D857B5400D62023 /* UIStoryboard+Look.swift */,
+				03B66C7D1D857B5400D62023 /* UITableViewCell+Look.swift */,
+				03B66C7E1D857B5400D62023 /* UIViewController+Look.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		03B66C5F1D85794900D62023 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				03BB732F1D85C2EE004805D3 /* FoldingCell */,
+				03B66C8E1D857B6100D62023 /* Reachability */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		03B66C601D85794900D62023 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				03B66C8C1D857B5A00D62023 /* Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		03B66C611D85794900D62023 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				03B66C971D857E0F00D62023 /* Battle.swift */,
+				03B66C9B1D859ED300D62023 /* King.swift */,
+				03B66C931D857C5A00D62023 /* BaseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03B66C621D85794900D62023 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				03B66C991D85817D00D62023 /* BattleManager.swift */,
+				03B66C951D857C5F00D62023 /* ServiceManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		03B66C631D85794900D62023 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				03B66C661D85794900D62023 /* Main */,
+				03B66C641D85794900D62023 /* LaunchScreen */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		03B66C641D85794900D62023 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				03B66C651D85794900D62023 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		03B66C661D85794900D62023 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				03B66C671D85794900D62023 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		03B66C681D85794900D62023 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				03BB73331D85C467004805D3 /* Home */,
+				03BB73321D85C467004805D3 /* Details */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		03B66C691D85794900D62023 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				03B66C6A1D85794900D62023 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		03B66C6B1D85794900D62023 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				03B66C6C1D85794900D62023 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		03B66C8E1D857B6100D62023 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				03B66C8F1D857B6100D62023 /* Reachability.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		03BB732F1D85C2EE004805D3 /* FoldingCell */ = {
+			isa = PBXGroup;
+			children = (
+				03BB73301D85C2EE004805D3 /* FoldingCell.swift */,
+			);
+			path = FoldingCell;
+			sourceTree = "<group>";
+		};
+		03BB73321D85C467004805D3 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				0372E0031D860CE600A29075 /* DetailsViewController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		03BB73331D85C467004805D3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				03BB73341D85C495004805D3 /* HomeViewController.swift */,
+				03BB73361D85C60B004805D3 /* HomeViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5E65888564E993B698551B22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0361C0CBFE7B0E8B9A6D9B92 /* Pods_Westeros_at_war.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B445581F4FC285DE1A7C329D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00C64EC85D86C6536224BBD9 /* Pods-Westeros at war.debug.xcconfig */,
+				1BB37AAE0A7896D5F3AC708B /* Pods-Westeros at war.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03B66C431D85784C00D62023 /* Westeros at war */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03B66C561D85784C00D62023 /* Build configuration list for PBXNativeTarget "Westeros at war" */;
+			buildPhases = (
+				3B9CC5255D79CCCB389F8D40 /* [CP] Check Pods Manifest.lock */,
+				03B66C401D85784C00D62023 /* Sources */,
+				03B66C411D85784C00D62023 /* Frameworks */,
+				03B66C421D85784C00D62023 /* Resources */,
+				9B5566AE1374ABCB7A7F3E33 /* [CP] Embed Pods Frameworks */,
+				4589F091B00D3168897CDBDC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Westeros at war";
+			productName = "Westeros at war";
+			productReference = 03B66C441D85784C00D62023 /* Westeros at war.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03B66C3C1D85784C00D62023 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = sachin;
+				TargetAttributes = {
+					03B66C431D85784C00D62023 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 03B66C3F1D85784C00D62023 /* Build configuration list for PBXProject "Westeros at war" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03B66C3B1D85784C00D62023;
+			productRefGroup = 03B66C451D85784C00D62023 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03B66C431D85784C00D62023 /* Westeros at war */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03B66C421D85784C00D62023 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03B66C6E1D85794900D62023 /* LaunchScreen.storyboard in Resources */,
+				03B66C701D85794900D62023 /* Assets.xcassets in Resources */,
+				03B66C6F1D85794900D62023 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B9CC5255D79CCCB389F8D40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4589F091B00D3168897CDBDC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Westeros at war/Pods-Westeros at war-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B5566AE1374ABCB7A7F3E33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Westeros at war/Pods-Westeros at war-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03B66C401D85784C00D62023 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03B66C801D857B5400D62023 /* Array+Look.swift in Sources */,
+				0372E0041D860CE600A29075 /* DetailsViewController.swift in Sources */,
+				03B66C921D857B7700D62023 /* Constants.swift in Sources */,
+				03B66C881D857B5400D62023 /* UILabel+Look.swift in Sources */,
+				03B66C9C1D859ED300D62023 /* King.swift in Sources */,
+				03B66C6D1D85794900D62023 /* AppDelegate.swift in Sources */,
+				03BB73371D85C60B004805D3 /* HomeViewCell.swift in Sources */,
+				03BB73351D85C495004805D3 /* HomeViewController.swift in Sources */,
+				03B66C841D857B5400D62023 /* UIColor+Look.swift in Sources */,
+				03B66C8D1D857B5A00D62023 /* Utility.swift in Sources */,
+				03B66C891D857B5400D62023 /* UIStoryboard+Look.swift in Sources */,
+				03B66C7F1D857B5400D62023 /* AppDelegate+Look.swift in Sources */,
+				03B66C8A1D857B5400D62023 /* UITableViewCell+Look.swift in Sources */,
+				03B66C9A1D85817D00D62023 /* BattleManager.swift in Sources */,
+				03BB73311D85C2EE004805D3 /* FoldingCell.swift in Sources */,
+				03B66C981D857E0F00D62023 /* Battle.swift in Sources */,
+				03B66C941D857C5A00D62023 /* BaseModel.swift in Sources */,
+				03B66C831D857B5400D62023 /* UICollectionViewCell+Look.swift in Sources */,
+				03B66C961D857C5F00D62023 /* ServiceManager.swift in Sources */,
+				03B66C811D857B5400D62023 /* NSDate+Look.swift in Sources */,
+				03B66C8B1D857B5400D62023 /* UIViewController+Look.swift in Sources */,
+				03B66C821D857B5400D62023 /* String+Look.swift in Sources */,
+				03B66C901D857B6100D62023 /* Reachability.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		03B66C541D85784C00D62023 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03B66C551D85784C00D62023 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03B66C571D85784C00D62023 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00C64EC85D86C6536224BBD9 /* Pods-Westeros at war.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/Westeros at war/SupportingFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sachin.demo.Westeros-at-war";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		03B66C581D85784C00D62023 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BB37AAE0A7896D5F3AC708B /* Pods-Westeros at war.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/Westeros at war/SupportingFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sachin.demo.Westeros-at-war";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03B66C3F1D85784C00D62023 /* Build configuration list for PBXProject "Westeros at war" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03B66C541D85784C00D62023 /* Debug */,
+				03B66C551D85784C00D62023 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03B66C561D85784C00D62023 /* Build configuration list for PBXNativeTarget "Westeros at war" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03B66C571D85784C00D62023 /* Debug */,
+				03B66C581D85784C00D62023 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03B66C3C1D85784C00D62023 /* Project object */;
+}
